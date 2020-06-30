@@ -1,0 +1,21 @@
+[Unit]
+Description=HTML Parser to parse Buyer/Seller information
+After=<PATH_TO_DOCKER>.service
+Requires=<PATH_TO_DOCKER>.service
+
+
+[Service]
+TimeoutStartSec=0 
+Restart=always
+RestartSec=15s
+WorkingDirectory=<PREFERRED_WORKING_DIRECTORY>
+ExecStart=<PATH_TO_DOCKER_COMPOSE_EXECUTABLE> up
+ExecStop=<PATH_TO_DOCKER_COMPOSE_EXECUTABLE> down
+ExecReload=<PATH_TO_DOCKER_COMPOSE_EXECUTABLE> up
+
+
+[Install]
+WantedBy=multi-user.target
+
+
+
