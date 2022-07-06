@@ -5,7 +5,7 @@ chardet==3.0.4
 extract-emails==3.0.5
 HTMLParser==0.0.2
 idna==2.10
-lxml==4.5.1
+lxml==4.9.1
 requests==2.24.0
 soupsieve==2.0.1
 urllib3==1.25.9
